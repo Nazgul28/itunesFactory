@@ -1,0 +1,73 @@
+body{
+	font-size: 14px;
+	background-color: #2531DB;
+	color: white;
+}
+
+.intro{
+	font-size: 20px;
+	padding-top: 20px;
+	text-align: center;
+	line-height: 2.5rem;
+	font-weight: bold;
+	color: #DBCF25;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+.itunes-widget{
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+}
+
+#artist-name{
+	width: 35%;
+	height: 20px;
+}
+
+.results{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.result-list{
+	/*border: 1px solid black;*/
+	width: 95%;
+	height: 380px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+
+li{
+	flex-grow: 1;
+	flex-basis: auto;
+	text-align: center;
+	padding: 10px;
+}
+
+h6{
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+p {
+	padding: 10px 0px 10px 0px;
+}
+
+a{
+	color: red;
+	text-decoration: none;
+}
+
+.github{
+	font-size: 30px;
+	color: #DBCF25;
+}
+.copyright{
+	text-align: center;
+	padding-bottom: 30px;
+	color: #DBCF25;
+}
