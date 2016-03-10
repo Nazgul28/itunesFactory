@@ -1,7 +1,5 @@
 $(function () {
 
-  // console.log('hi');
-  
   $('#album-search').submit(function(event){
    event.preventDefault();
 
@@ -20,24 +18,21 @@ $(function () {
   })
 
    .done(function(results){
-            // var result = results.data;
-            console.log(results);
 
-            $(results.results).each(function(index,value) {
-              // console.log(value, results);
-              // console.log(value.artistName);
-              newLine += '<li>';
-              newLine += '<h4>' + value.collectionName + '</h4></br>';
-              newLine += '<img src=" ' + value.artworkUrl100 + ' "/></br>';
-              newLine += '<h6>' + value.copyright + '</h6>';
-              newLine += '<p> $' + value.collectionPrice + '</p>';
-              newLine += '<a href=" ' + value.collectionViewUrl + ' "> check more on iTunes </a>';
-              newLine += '</li>';
+    console.log(results);
 
-            });
+    $(results.results).each(function(index,value) {
+      newLine += '<li>';
+      newLine += '<h4>' + value.collectionName + '</h4></br>';
+      newLine += '<img src=" ' + value.artworkUrl100 + ' "/></br>';
+      newLine += '<h6>' + value.copyright + '</h6>';
+      newLine += '<p> $' + value.collectionPrice + '</p>';
+      newLine += '<a href=" ' + value.collectionViewUrl + ' "> check more on iTunes </a>';
+      newLine += '</li>';
+    });
 
-            $('.result-list').append(newLine);
-          });
+    $('.result-list').append(newLine);
+  });
 
    $('#album-search').submit(function() {
     $('.result-list').empty();
