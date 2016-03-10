@@ -1,5 +1,4 @@
 # itunesFactory
-Playing around with iTunes API .. (jQuery/AJAX) - click here: 
 
 In this website I used an AJAX request and "GET" method to fetch data from the iTunes API.
 
